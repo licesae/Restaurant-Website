@@ -1,0 +1,149 @@
+* {
+  font-family: Helvetica, sans-serif, Verdana, sans-serif;
+  color: #493330;
+  box-sizing: border-box;
+}
+
+.darumadrop-one-regular {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+header h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+article h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+section h3 {
+  font-weight: 300;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav,
+#feature,
+footer {
+  margin: 2%;
+}
+
+nav li {
+  display: inline;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.row-color-1 {
+  background-color: antiquewhite;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+  -webkit-transform: scale(1.08); /* Slightly enlarge for Safari/Chrome */
+  -ms-transform: scale(1.08); /* Slightly enlarge for IE */
+  transform: scale(1.08); /* Slightly enlarge */
+}
+.footer-container {
+  background-color: #c1b2a9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container h5 {
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 0 5px 0;
+}
+
+.footer-container p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.image-gallery-container {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.tilt-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.tilt-hover:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.typing-text {
+  font-family: "Darumadrop One", cursive;
+  font-size: 64px;
+  color: #c1b2a9;
+  text-align: center;
+  padding: 10px 40px 20px 40px;
+  width: 12ch;
+  margin: 50px auto;
+  border-radius: 75px;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  animation: typing 2.6s steps(12), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 12ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
