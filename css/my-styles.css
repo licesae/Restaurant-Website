@@ -41,18 +41,26 @@ article img {
   height: auto;
 }
 
-nav,
-#feature,
-footer {
-  margin: 2%;
+nav {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  font-family: "Helvetica", sans-serif;
 }
 
-nav li {
-  display: inline;
-  padding: 0.5em;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
+nav ul li a {
+  color: #c1b2a9;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #a18877;
+  transform: scale(1.1);
 }
 
 .row-color-1 {
@@ -64,9 +72,9 @@ nav li {
 }
 
 .zoom-image:hover {
-  -webkit-transform: scale(1.08); /* Slightly enlarge for Safari/Chrome */
-  -ms-transform: scale(1.08); /* Slightly enlarge for IE */
-  transform: scale(1.08); /* Slightly enlarge */
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .footer-container {
   background-color: #c1b2a9;
@@ -129,21 +137,20 @@ nav li {
 
   overflow: hidden;
   white-space: nowrap;
-
-  animation: typing 2.6s steps(12), blink 0.75s step-end infinite;
+  animation: typing 1.5s steps(18), blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
   from {
-    width: 0ch;
+    width: 0px;
   }
   to {
-    width: 12ch;
+    width: calc(12ch);
   }
 }
 
 @keyframes blink {
-  50% {
+  55% {
     border-color: transparent;
   }
 }
